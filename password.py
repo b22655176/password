@@ -7,7 +7,7 @@
 
 password = 'a123456'
 i = 3 #剩餘機會
-while True:
+while i > 0: #當他還有剩餘機會(i),我才迴圈
 	pwd = input('請輸入密碼')#設使用者的密碼變數為pwd
 	if pwd == password:#如果 pwd是密碼就登入成功
 		print('登入成功')
@@ -15,5 +15,3 @@ while True:
 	else:#反之 錯的話 i 要減少
 		i = i - 1 
 		print('密碼錯誤!還有', i ,'機會')
-		if i == 0: #剩餘次數=0，
-		 break#就跳出迴圈
